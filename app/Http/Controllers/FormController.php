@@ -25,7 +25,7 @@ class FormController extends Controller
         $whId = 'j9egv13zgfpwvo1k';
 
         $this->tgToken = '5590847189:AAEEymCadyqoIlEqwK_25C3vfPUaFK5H31M';
-        $this->chat_id = '1234';
+        $this->chat_id = '1654121345';
 
         $this->sendBitrix($paUrl . '/rest/1/' . $whId . '/', 'crm.lead.add');
 
@@ -38,11 +38,11 @@ class FormController extends Controller
 
         $text =
             'ФИО: ' . $this->data['name'] . '
-        Телефон: ' . $this->data['phone'] . '
-        Дата рождения: ' . $this->data['date'] . '
-        Email: ' . $this->data['email'] . '
-        Комментарий: ' . $this->data['comment'] . '
-        ' . $this->data['bitrixUrl'];
+Телефон: ' . $this->data['phone'] . '
+Дата рождения: ' . $this->data['date'] . '
+Email: ' . $this->data['email'] . '
+Комментарий: ' . $this->data['comment'] . '
+' . $this->data['bitrixUrl'];
 
         $response['chat_id'] = $this->chat_id;
         $response['text'] = $text;
